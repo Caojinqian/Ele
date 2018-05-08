@@ -1,0 +1,11 @@
+C:\Users\cao\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\obj\x86\Debug\WindowsApp2.vbprojResolveAssemblyReference.cache
+C:\Users\cao\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\obj\x86\Debug\WindowsApp2.Form1.resources
+C:\Users\cao\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\obj\x86\Debug\WindowsApp2.Resources.resources
+C:\Users\cao\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\obj\x86\Debug\WindowsApp2.vbproj.GenerateResource.Cache
+C:\Users\cao\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\bin\x86\Debug\WindowsApp2.exe.config
+C:\Users\cao\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\bin\x86\Debug\WindowsApp2.exe
+C:\Users\cao\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\bin\x86\Debug\WindowsApp2.pdb
+C:\Users\cao\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\bin\x86\Debug\WindowsApp2.xml
+C:\Users\cao\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\obj\x86\Debug\WindowsApp2.exe
+C:\Users\cao\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\obj\x86\Debug\WindowsApp2.xml
+C:\Users\cao\Documents\Visual Studio 2017\Projects\WindowsApp2\WindowsApp2\obj\x86\Debug\WindowsApp2.pdb
