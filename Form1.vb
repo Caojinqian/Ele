@@ -1599,10 +1599,10 @@
                     PrintLine(1, "M" + M_SR + "_Status" + ":" + Chr(34) + "#YF#StatusSTHF" + Chr(34) + Chr(59))
                 End If
                 If M_MorF = "2" Then
-                    PrintLine(1, Chr(34) + "M" + M_SR + "_Status"":" + Chr(34) + "#YF#StatusVF" + Chr(34))
+                    PrintLine(1, "M" + M_SR + "_Status" + ":" + Chr(34) + "#YF#StatusVF" + Chr(34) + Chr(59))
                 End If
                 If M_MorF = "3" Then
-                    PrintLine(1, Chr(34) + "M" + M_SR + "_Status"":" + Chr(34) + "#YF#StatusST" + Chr(34))
+                    PrintLine(1, "M" + M_SR + "_Status"":" + Chr(34) + "#YF#StatusST" + Chr(34) + +Chr(59))
                 End If
                 If M_MorF = "4" Then
                     PrintLine(1, Chr(34) + "M" + M_SR + "_Status"":" + Chr(34) + "#YF#StatusPHIX" + Chr(34))
