@@ -31,7 +31,7 @@ Partial Class Form1
         Me.IOSheet = New System.Windows.Forms.TextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.LabelDateTime = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -88,6 +88,7 @@ Partial Class Form1
         Me.IOSheet.Size = New System.Drawing.Size(116, 40)
         Me.IOSheet.TabIndex = 10
         Me.IOSheet.TabStop = False
+        Me.IOSheet.Text = "OP01"
         '
         'PictureBox1
         '
@@ -108,21 +109,21 @@ Partial Class Form1
         Me.Label2.TabIndex = 12
         Me.Label2.Text = "输入子表名称："
         '
-        'Label3
+        'LabelDateTime
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(603, 432)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(53, 12)
-        Me.Label3.TabIndex = 13
-        Me.Label3.Text = "20180508"
+        Me.LabelDateTime.AutoSize = True
+        Me.LabelDateTime.Location = New System.Drawing.Point(603, 432)
+        Me.LabelDateTime.Name = "LabelDateTime"
+        Me.LabelDateTime.Size = New System.Drawing.Size(53, 12)
+        Me.LabelDateTime.TabIndex = 13
+        Me.LabelDateTime.Text = "20180508"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(704, 456)
-        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.LabelDateTime)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.IOSheet)
@@ -147,5 +148,5 @@ Partial Class Form1
     Friend WithEvents IOSheet As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents LabelDateTime As Label
 End Class

@@ -1,0 +1,981 @@
+ FUNCTION_BLOCK "InputTransfer "
+{S7_Optimized_Access :='TRUE'}
+VERSION : 0.1
+VAR
+M102:"#YF#InputTransfer";
+M251:"#YF#InputTransfer";
+M103:"#YF#InputTransfer";
+M104:"#YF#InputTransfer";
+M105:"#YF#InputTransfer";
+M106:"#YF#InputTransfer";
+M107:"#YF#InputTransfer";
+M108:"#YF#InputTransfer";
+M252:"#YF#InputTransfer";
+M109:"#YF#InputTransfer";
+M110:"#YF#InputTransfer";
+M111:"#YF#InputTransfer";
+M253:"#YF#InputTransfer";
+M112:"#YF#InputTransfer";
+M113:"#YF#InputTransfer";
+M114:"#YF#InputTransfer";
+M116:"#YF#InputTransfer";
+M275:"#YF#InputTransfer";
+M117:"#YF#InputTransfer";
+M118:"#YF#InputTransfer";
+M254:"#YF#InputTransfer";
+M119:"#YF#InputTransfer";
+M270:"#YF#InputTransfer";
+M271:"#YF#InputTransfer";
+M120:"#YF#InputTransfer";
+M121:"#YF#InputTransfer";
+M122:"#YF#InputTransfer";
+M255:"#YF#InputTransfer";
+M123:"#YF#InputTransfer";
+M124:"#YF#InputTransfer";
+M125:"#YF#InputTransfer";
+M256:"#YF#InputTransfer";
+M126:"#YF#InputTransfer";
+M272:"#YF#InputTransfer";
+M273:"#YF#InputTransfer";
+M127:"#YF#InputTransfer";
+M129:"#YF#InputTransfer";
+M276:"#YF#InputTransfer";
+M130:"#YF#InputTransfer";
+M131:"#YF#InputTransfer";
+M132:"#YF#InputTransfer";
+M257:"#YF#InputTransfer";
+M133:"#YF#InputTransfer";
+M134:"#YF#InputTransfer";
+M136:"#YF#InputTransfer";
+M137:"#YF#InputTransfer";
+M258:"#YF#InputTransfer";
+M138:"#YF#InputTransfer";
+M139:"#YF#InputTransfer";
+M140:"#YF#InputTransfer";
+M141:"#YF#InputTransfer";
+M259:"#YF#InputTransfer";
+M142:"#YF#InputTransfer";
+M165:"#YF#InputTransfer";
+M166:"#YF#InputTransfer";
+M167:"#YF#InputTransfer";
+M168:"#YF#InputTransfer";
+M169:"#YF#InputTransfer";
+M263:"#YF#InputTransfer";
+M171:"#YF#InputTransfer";
+M143:"#YF#InputTransfer";
+M260:"#YF#InputTransfer";
+M144:"#YF#InputTransfer";
+M145:"#YF#InputTransfer";
+M261:"#YF#InputTransfer";
+M146:"#YF#InputTransfer";
+M147:"#YF#InputTransfer";
+M148:"#YF#InputTransfer";
+M149:"#YF#InputTransfer";
+M150:"#YF#InputTransfer";
+M151:"#YF#InputTransfer";
+M152:"#YF#InputTransfer";
+M154:"#YF#InputTransfer";
+M155:"#YF#InputTransfer";
+M156:"#YF#InputTransfer";
+M157:"#YF#InputTransfer";
+M262:"#YF#InputTransfer";
+M158:"#YF#InputTransfer";
+M159:"#YF#InputTransfer";
+M161:"#YF#InputTransfer";
+M162:"#YF#InputTransfer";
+M163:"#YF#InputTransfer";
+M164:"#YF#InputTransfer";
+M172:"#YF#InputTransfer";
+M173:"#YF#InputTransfer";
+M174:"#YF#InputTransfer";
+M264:"#YF#InputTransfer";
+M175:"#YF#InputTransfer";
+M176:"#YF#InputTransfer";
+M177:"#YF#InputTransfer";
+M178:"#YF#InputTransfer";
+END_VAR
+BEGIN
+//102 ‰»Î–≈∫≈”≥…‰;
+#M102(
+M_ID:=102,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I60.0,
+F_Running:=%I60.1,
+B_Running:=%I60.1,
+SQ1:=%I60.4,
+SQ2:=%I60.5);
+//251 ‰»Î–≈∫≈”≥…‰;
+#M251(
+M_ID:=251,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I60.2,
+F_Running:=%I60.3,
+B_Running:=%I60.3);
+//103 ‰»Î–≈∫≈”≥…‰;
+#M103(
+M_ID:=103,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I61.0,
+F_Running:=%I61.1,
+B_Running:=%I61.1,
+BQ1:=%I61.2,
+BQ2:=%I61.3,
+BQ3:=%I61.4,
+BQ4:=%I61.5);
+//104 ‰»Î–≈∫≈”≥…‰;
+#M104(
+M_ID:=104,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I62.0,
+F_Running:=%I62.1,
+B_Running:=%I62.1,
+BQ1:=%I62.2,
+BQ2:=%I62.3);
+//105 ‰»Î–≈∫≈”≥…‰;
+#M105(
+M_ID:=105,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I62.4,
+F_Running:=%I62.5,
+B_Running:=%I62.5,
+BQ1:=%I62.6,
+BQ2:=%I62.7);
+//106 ‰»Î–≈∫≈”≥…‰;
+#M106(
+M_ID:=106,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I63.0,
+F_Running:=%I63.1,
+B_Running:=%I63.1,
+BQ1:=%I63.2,
+BQ2:=%I63.3);
+//107 ‰»Î–≈∫≈”≥…‰;
+#M107(
+M_ID:=107,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I63.4,
+F_Running:=%I63.5,
+B_Running:=%I63.5,
+BQ1:=%I63.6);
+//108 ‰»Î–≈∫≈”≥…‰;
+#M108(
+M_ID:=108,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I64.0,
+F_Running:=%I64.1,
+B_Running:=%I64.1,
+SQ1:=%I64.4,
+SQ2:=%I64.5);
+//252 ‰»Î–≈∫≈”≥…‰;
+#M252(
+M_ID:=252,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I64.2,
+F_Running:=%I64.3,
+B_Running:=%I64.3);
+//109 ‰»Î–≈∫≈”≥…‰;
+#M109(
+M_ID:=109,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I65.0,
+F_Running:=%I65.1,
+B_Running:=%I65.1,
+BQ1:=%I65.2,
+BQ2:=%I65.3);
+//110 ‰»Î–≈∫≈”≥…‰;
+#M110(
+M_ID:=110,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I65.4,
+F_Running:=%I65.5,
+B_Running:=%I65.5,
+BQ1:=%I65.6,
+BQ2:=%I65.7);
+//111 ‰»Î–≈∫≈”≥…‰;
+#M111(
+M_ID:=111,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I66.0,
+F_Running:=%I66.1,
+B_Running:=%I66.1,
+SQ1:=%I66.4,
+SQ2:=%I66.5);
+//253 ‰»Î–≈∫≈”≥…‰;
+#M253(
+M_ID:=253,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I66.2,
+F_Running:=%I66.3,
+B_Running:=%I66.3);
+//112 ‰»Î–≈∫≈”≥…‰;
+#M112(
+M_ID:=112,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I67.0,
+F_Running:=%I67.1,
+B_Running:=%I67.1,
+BQ1:=%I67.2,
+BQ2:=%I67.3);
+//113 ‰»Î–≈∫≈”≥…‰;
+#M113(
+M_ID:=113,
+M_ID_Offset:=100,
+QS :="QS01",
+QF:=%I67.4,
+F_Running:=%I67.5,
+B_Running:=%I67.5,
+BQ1:=%I67.6,
+BQ2:=%I67.7,
+BQ3:=%I68.0);
+//114 ‰»Î–≈∫≈”≥…‰;
+#M114(
+M_ID:=114,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I80.0,
+F_Running:=%I80.1,
+B_Running:=%I80.1,
+BQ1:=%I80.2);
+//116 ‰»Î–≈∫≈”≥…‰;
+#M116(
+M_ID:=116,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I80.3,
+F_Running:=%I80.4,
+B_Running:=%I80.4,
+BQ1:=%I80.5,
+SQ1:=%I81.0,
+SQ2:=%I81.1,
+SA1:=%I81.2,
+SA2:=%I81.3);
+//275 ‰»Î–≈∫≈”≥…‰;
+#M275(
+M_ID:=275,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I80.6,
+F_Running:=%I80.7,
+B_Running:=%I80.7);
+//117 ‰»Î–≈∫≈”≥…‰;
+#M117(
+M_ID:=117,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I81.4,
+F_Running:=%I81.5,
+B_Running:=%I81.5,
+BQ1:=%I81.6);
+//118 ‰»Î–≈∫≈”≥…‰;
+#M118(
+M_ID:=118,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I82.0,
+F_Running:=%I82.1,
+B_Running:=%I82.1,
+SQ1:=%I82.4,
+SQ2:=%I82.5);
+//254 ‰»Î–≈∫≈”≥…‰;
+#M254(
+M_ID:=254,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I82.2,
+F_Running:=%I82.3,
+B_Running:=%I82.3);
+//119 ‰»Î–≈∫≈”≥…‰;
+#M119(
+M_ID:=119,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I83.0,
+F_Running:=%I83.1,
+B_Running:=%I83.1,
+BQ1:=%I84.7,
+SQ1:=%I83.6,
+SQ2:=%I83.7,
+SQ3:=%I84.0,
+SQ4:=%I84.3,
+SA1:=%I84.1,
+SA2:=%I84.2,
+SQ5:=%I84.4,
+SQ6:=%I84.5,
+SQ7:=%I84.6);
+//270 ‰»Î–≈∫≈”≥…‰;
+#M270(
+M_ID:=270,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I83.2,
+F_Running:=%I83.3,
+B_Running:=%I83.3);
+//271 ‰»Î–≈∫≈”≥…‰;
+#M271(
+M_ID:=271,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I83.4,
+F_Running:=%I83.5,
+B_Running:=%I83.5);
+//120 ‰»Î–≈∫≈”≥…‰;
+#M120(
+M_ID:=120,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I85.0,
+F_Running:=%I85.1,
+B_Running:=%I85.1,
+BQ1:=%I85.2,
+BQ2:=%I85.3);
+//121 ‰»Î–≈∫≈”≥…‰;
+#M121(
+M_ID:=121,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I85.4,
+F_Running:=%I85.5,
+B_Running:=%I85.5,
+BQ1:=%I85.6);
+//122 ‰»Î–≈∫≈”≥…‰;
+#M122(
+M_ID:=122,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I86.0,
+F_Running:=%I86.1,
+B_Running:=%I86.1,
+SQ1:=%I86.4,
+SQ2:=%I86.5);
+//255 ‰»Î–≈∫≈”≥…‰;
+#M255(
+M_ID:=255,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I86.2,
+F_Running:=%I86.3,
+B_Running:=%I86.3);
+//123 ‰»Î–≈∫≈”≥…‰;
+#M123(
+M_ID:=123,
+M_ID_Offset:=100,
+QS :="QS02",
+QF:=%I87.0,
+F_Running:=%I87.1,
+B_Running:=%I87.1,
+BQ1:=%I87.2);
+//124 ‰»Î–≈∫≈”≥…‰;
+#M124(
+M_ID:=124,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I100.0,
+F_Running:=%I100.1,
+B_Running:=%I100.1,
+BQ1:=%I100.2,
+BQ2:=%I100.3);
+//125 ‰»Î–≈∫≈”≥…‰;
+#M125(
+M_ID:=125,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I100.4,
+F_Running:=%I100.5,
+B_Running:=%I100.5,
+SQ1:=%I101.0,
+SQ2:=%I101.1);
+//256 ‰»Î–≈∫≈”≥…‰;
+#M256(
+M_ID:=256,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I100.6,
+F_Running:=%I100.7,
+B_Running:=%I100.7);
+//126 ‰»Î–≈∫≈”≥…‰;
+#M126(
+M_ID:=126,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I101.4,
+F_Running:=%I101.5,
+B_Running:=%I101.5,
+BQ1:=%I103.3,
+SQ1:=%I102.2,
+SQ2:=%I102.3,
+SQ3:=%I102.4,
+SQ4:=%I102.7,
+SA1:=%I102.5,
+SA2:=%I102.6,
+SQ5:=%I103.0,
+SQ6:=%I103.1,
+SQ7:=%I103.2);
+//272 ‰»Î–≈∫≈”≥…‰;
+#M272(
+M_ID:=272,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I101.6,
+F_Running:=%I101.7,
+B_Running:=%I101.7);
+//273 ‰»Î–≈∫≈”≥…‰;
+#M273(
+M_ID:=273,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I102.0,
+F_Running:=%I102.1,
+B_Running:=%I102.1);
+//127 ‰»Î–≈∫≈”≥…‰;
+#M127(
+M_ID:=127,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I103.4,
+F_Running:=%I103.5,
+B_Running:=%I103.5,
+BQ1:=%I103.6);
+//129 ‰»Î–≈∫≈”≥…‰;
+#M129(
+M_ID:=129,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I104.0,
+F_Running:=%I104.1,
+B_Running:=%I104.1,
+BQ1:=%I104.2,
+SQ1:=%I104.5,
+SQ2:=%I104.6,
+SA1:=%I104.7,
+SA2:=%I105.0);
+//276 ‰»Î–≈∫≈”≥…‰;
+#M276(
+M_ID:=276,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I104.3,
+F_Running:=%I104.4,
+B_Running:=%I104.4);
+//130 ‰»Î–≈∫≈”≥…‰;
+#M130(
+M_ID:=130,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I105.1,
+F_Running:=%I105.2,
+B_Running:=%I105.2,
+BQ1:=%I105.3);
+//131 ‰»Î–≈∫≈”≥…‰;
+#M131(
+M_ID:=131,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I105.4,
+F_Running:=%I105.5,
+B_Running:=%I105.5,
+BQ1:=%I105.6,
+BQ2:=%I105.7,
+BQ3:=%I106.0);
+//132 ‰»Î–≈∫≈”≥…‰;
+#M132(
+M_ID:=132,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I106.2,
+F_Running:=%I106.3,
+B_Running:=%I106.3,
+SQ1:=%I106.6,
+SQ2:=%I106.7);
+//257 ‰»Î–≈∫≈”≥…‰;
+#M257(
+M_ID:=257,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I106.4,
+F_Running:=%I106.5,
+B_Running:=%I106.5);
+//133 ‰»Î–≈∫≈”≥…‰;
+#M133(
+M_ID:=133,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I107.0,
+F_Running:=%I107.1,
+B_Running:=%I107.1,
+BQ1:=%I107.2,
+BQ2:=%I107.3);
+//134 ‰»Î–≈∫≈”≥…‰;
+#M134(
+M_ID:=134,
+M_ID_Offset:=100,
+QS :="QS03",
+QF:=%I107.4,
+F_Running:=%I107.5,
+B_Running:=%I107.5,
+BQ1:=%I107.6,
+BQ2:=%I107.7);
+//136 ‰»Î–≈∫≈”≥…‰;
+#M136(
+M_ID:=136,
+M_ID_Offset:=,
+BQ1:=%I108.0,
+BQ2:=%I108.1,
+BQ3:=%I108.2,
+BQ4:=%I108.3,
+BQ5:=%I108.4,
+BQ6:=%I108.5,
+BQ7:=%I108.6);
+//137 ‰»Î–≈∫≈”≥…‰;
+#M137(
+M_ID:=137,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I120.0,
+F_Running:=%I120.1,
+B_Running:=%I120.1,
+SQ1:=%I120.4,
+SQ2:=%I120.5);
+//258 ‰»Î–≈∫≈”≥…‰;
+#M258(
+M_ID:=258,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I120.2,
+F_Running:=%I120.3,
+B_Running:=%I120.3);
+//138 ‰»Î–≈∫≈”≥…‰;
+#M138(
+M_ID:=138,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I121.0,
+F_Running:=%I121.1,
+B_Running:=%I121.1,
+BQ1:=%I121.2,
+BQ2:=%I121.3,
+BQ3:=%I121.4);
+//139 ‰»Î–≈∫≈”≥…‰;
+#M139(
+M_ID:=139,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I121.5,
+F_Running:=%I121.6,
+B_Running:=%I121.6,
+BQ1:=%I121.7);
+//140 ‰»Î–≈∫≈”≥…‰;
+#M140(
+M_ID:=140,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I122.0,
+F_Running:=%I122.1,
+B_Running:=%I122.1,
+BQ1:=%I122.2);
+//141 ‰»Î–≈∫≈”≥…‰;
+#M141(
+M_ID:=141,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I122.3,
+F_Running:=%I122.4,
+B_Running:=%I122.4);
+//259 ‰»Î–≈∫≈”≥…‰;
+#M259(
+M_ID:=259,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I122.5,
+F_Running:=%I122.6,
+B_Running:=%I122.6,
+SQ1:=%I122.7,
+SQ2:=%I123.0);
+//142 ‰»Î–≈∫≈”≥…‰;
+#M142(
+M_ID:=142,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I123.1,
+F_Running:=%I123.2,
+B_Running:=%I123.2,
+BQ1:=%I123.3);
+//165 ‰»Î–≈∫≈”≥…‰;
+#M165(
+M_ID:=165,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I124.0,
+F_Running:=%I124.1,
+B_Running:=%I124.1,
+BQ1:=%I124.3,
+BQ2:=%I124.4,
+BQ3:=%I124.2,
+BQ4:=%I124.5);
+//166 ‰»Î–≈∫≈”≥…‰;
+#M166(
+M_ID:=166,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I125.0,
+F_Running:=%I125.1,
+B_Running:=%I125.1,
+BQ1:=%I125.2,
+BQ2:=%I125.3);
+//167 ‰»Î–≈∫≈”≥…‰;
+#M167(
+M_ID:=167,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I125.4,
+F_Running:=%I125.5,
+B_Running:=%I125.5,
+BQ1:=%I125.6,
+BQ3:=%I125.7);
+//168 ‰»Î–≈∫≈”≥…‰;
+#M168(
+M_ID:=168,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I126.0,
+F_Running:=%I126.1,
+B_Running:=%I126.1,
+BQ1:=%I126.2,
+BQ2:=%I126.3);
+//169 ‰»Î–≈∫≈”≥…‰;
+#M169(
+M_ID:=169,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I126.4,
+F_Running:=%I126.5,
+B_Running:=%I126.5,
+SQ1:=%I127.0,
+SQ2:=%I127.1);
+//263 ‰»Î–≈∫≈”≥…‰;
+#M263(
+M_ID:=263,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I126.6,
+F_Running:=%I126.7,
+B_Running:=%I126.7);
+//171 ‰»Î–≈∫≈”≥…‰;
+#M171(
+M_ID:=171,
+M_ID_Offset:=100,
+QS :="QS04",
+QF:=%I127.2,
+F_Running:=%I127.3,
+B_Running:=%I127.3,
+BQ1:=%I127.4);
+//143 ‰»Î–≈∫≈”≥…‰;
+#M143(
+M_ID:=143,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I140.0,
+F_Running:=%I140.1,
+B_Running:=%I140.1,
+SQ1:=%I140.4,
+SQ2:=%I140.5);
+//260 ‰»Î–≈∫≈”≥…‰;
+#M260(
+M_ID:=260,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I140.2,
+F_Running:=%I140.3,
+B_Running:=%I140.3);
+//144 ‰»Î–≈∫≈”≥…‰;
+#M144(
+M_ID:=144,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I141.0,
+F_Running:=%I141.1,
+B_Running:=%I141.1,
+BQ1:=%I141.2,
+BQ2:=%I141.3);
+//145 ‰»Î–≈∫≈”≥…‰;
+#M145(
+M_ID:=145,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I141.4,
+F_Running:=%I141.5,
+B_Running:=%I141.5,
+SQ1:=%I142.0,
+SQ2:=%I142.1);
+//261 ‰»Î–≈∫≈”≥…‰;
+#M261(
+M_ID:=261,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I141.6,
+F_Running:=%I141.7,
+B_Running:=%I141.7);
+//146 ‰»Î–≈∫≈”≥…‰;
+#M146(
+M_ID:=146,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I142.2,
+F_Running:=%I142.3,
+B_Running:=%I142.3,
+BQ1:=%I142.4,
+BQ2:=%I142.5);
+//147 ‰»Î–≈∫≈”≥…‰;
+#M147(
+M_ID:=147,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I143.0,
+F_Running:=%I143.1,
+B_Running:=%I143.1,
+BQ1:=%I143.2);
+//148 ‰»Î–≈∫≈”≥…‰;
+#M148(
+M_ID:=148,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I143.3,
+F_Running:=%I143.4,
+B_Running:=%I143.4,
+BQ1:=%I143.5);
+//149 ‰»Î–≈∫≈”≥…‰;
+#M149(
+M_ID:=149,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I144.0,
+F_Running:=%I144.1,
+B_Running:=%I144.1,
+BQ1:=%I144.2,
+BQ3:=%I144.3);
+//150 ‰»Î–≈∫≈”≥…‰;
+#M150(
+M_ID:=150,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I144.4,
+F_Running:=%I144.5,
+B_Running:=%I144.5,
+BQ1:=%I144.6,
+BQ3:=%I144.7);
+//151 ‰»Î–≈∫≈”≥…‰;
+#M151(
+M_ID:=151,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I145.0,
+F_Running:=%I145.1,
+B_Running:=%I145.1,
+BQ1:=%I145.2,
+BQ2:=%I145.3);
+//152 ‰»Î–≈∫≈”≥…‰;
+#M152(
+M_ID:=152,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I145.4,
+F_Running:=%I145.5,
+B_Running:=%I145.5,
+BQ1:=%I145.6,
+BQ3:=%I145.7);
+//154 ‰»Î–≈∫≈”≥…‰;
+#M154(
+M_ID:=154,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I146.0,
+F_Running:=%I146.1,
+B_Running:=%I146.1,
+BQ1:=%I146.2,
+BQ2:=%I146.3);
+//155 ‰»Î–≈∫≈”≥…‰;
+#M155(
+M_ID:=155,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I146.4,
+F_Running:=%I146.5,
+B_Running:=%I146.5,
+BQ1:=%I146.6,
+BQ2:=%I146.7);
+//156 ‰»Î–≈∫≈”≥…‰;
+#M156(
+M_ID:=156,
+M_ID_Offset:=100,
+QS :="QS05",
+QF:=%I147.0,
+F_Running:=%I147.1,
+B_Running:=%I147.1,
+BQ1:=%I147.2,
+BQ2:=%I147.3);
+//157 ‰»Î–≈∫≈”≥…‰;
+#M157(
+M_ID:=157,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I160.0,
+F_Running:=%I160.1,
+B_Running:=%I160.1,
+SQ1:=%I160.4,
+SQ2:=%I160.5);
+//262 ‰»Î–≈∫≈”≥…‰;
+#M262(
+M_ID:=262,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I160.2,
+F_Running:=%I160.3,
+B_Running:=%I160.3);
+//158 ‰»Î–≈∫≈”≥…‰;
+#M158(
+M_ID:=158,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I161.0,
+F_Running:=%I161.1,
+B_Running:=%I161.1,
+BQ1:=%I161.2);
+//159 ‰»Î–≈∫≈”≥…‰;
+#M159(
+M_ID:=159,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I161.3,
+F_Running:=%I161.4,
+B_Running:=%I161.4,
+BQ1:=%I161.5,
+BQ3:=%I161.6);
+//161 ‰»Î–≈∫≈”≥…‰;
+#M161(
+M_ID:=161,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I162.0,
+F_Running:=%I162.1,
+B_Running:=%I162.1,
+BQ1:=%I162.2,
+BQ3:=%I162.3);
+//162 ‰»Î–≈∫≈”≥…‰;
+#M162(
+M_ID:=162,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I162.4,
+F_Running:=%I162.5,
+B_Running:=%I162.5,
+BQ1:=%I162.6,
+BQ3:=%I162.7);
+//163 ‰»Î–≈∫≈”≥…‰;
+#M163(
+M_ID:=163,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I163.0,
+F_Running:=%I163.1,
+B_Running:=%I163.1,
+BQ1:=%I163.2,
+BQ2:=%I163.3);
+//164 ‰»Î–≈∫≈”≥…‰;
+#M164(
+M_ID:=164,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I163.4,
+F_Running:=%I163.5,
+B_Running:=%I163.5,
+BQ1:=%I163.6,
+BQ3:=%I163.7);
+//172 ‰»Î–≈∫≈”≥…‰;
+#M172(
+M_ID:=172,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I164.0,
+F_Running:=%I164.1,
+B_Running:=%I164.1,
+BQ1:=%I164.2,
+BQ2:=%I164.3);
+//173 ‰»Î–≈∫≈”≥…‰;
+#M173(
+M_ID:=173,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I164.4,
+F_Running:=%I164.5,
+B_Running:=%I164.5,
+BQ1:=%I164.6);
+//174 ‰»Î–≈∫≈”≥…‰;
+#M174(
+M_ID:=174,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I165.0,
+F_Running:=%I165.1,
+B_Running:=%I165.1);
+//264 ‰»Î–≈∫≈”≥…‰;
+#M264(
+M_ID:=264,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I165.2,
+F_Running:=%I165.3,
+B_Running:=%I165.3,
+SQ1:=%I165.4,
+SQ2:=%I165.5);
+//175 ‰»Î–≈∫≈”≥…‰;
+#M175(
+M_ID:=175,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I166.0,
+F_Running:=%I166.1,
+B_Running:=%I166.1);
+//176 ‰»Î–≈∫≈”≥…‰;
+#M176(
+M_ID:=176,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I166.2,
+F_Running:=%I166.3,
+B_Running:=%I166.3,
+BQ1:=%I166.4,
+BQ2:=%I166.5);
+//177 ‰»Î–≈∫≈”≥…‰;
+#M177(
+M_ID:=177,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I167.0,
+F_Running:=%I167.1,
+B_Running:=%I167.1,
+BQ1:=%I167.2);
+//178 ‰»Î–≈∫≈”≥…‰;
+#M178(
+M_ID:=178,
+M_ID_Offset:=100,
+QS :="QS06",
+QF:=%I167.3,
+F_Running:=%I167.4,
+B_Running:=%I167.4,
+BQ1:=%I167.5,
+BQ3:=%I167.6);
+
+END_FUNCTION_BLOCK

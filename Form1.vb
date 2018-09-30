@@ -2,12 +2,17 @@
     Dim xlApp As Microsoft.Office.Interop.Excel.Application '定义工作表类
     Dim xlBook As Microsoft.Office.Interop.Excel.Workbook  '定义工件簿类  
     Dim xlsheet As Microsoft.Office.Interop.Excel.Worksheet '定义工作表类  
+    ' Dim LabelDate As Date
+    ' Dim txt1 = LabelDate
+    ' LabelDateTime.Text = txt1
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles 生成IO符号表.Click
         Dim name_of_sheet_IO = IOSheet.Text
         Dim xlApp As New Microsoft.Office.Interop.Excel.Application
         ' xlApp.Workbooks.Open("c:\MyDate.xls")
         Dim P = Application.StartupPath & "\输入输出表.xlsx"
         Dim txt = Application.StartupPath & "\IOSymbol.txt"
+
 
         xlApp.Caption = "欢迎,使用!"
         Dim xlBook = xlApp.Workbooks.Open(P) '打开电机数据表
@@ -141,7 +146,7 @@
 
                 If QS <> Nothing Then
                     If Microsoft.VisualBasic.Left(QS, 1).ToString <> "I" And Microsoft.VisualBasic.Left(QS, 1).ToString <> "i" Then
-                        PrintLine(1, "QS" + M_SR + Chr(9) + QS + Chr(9) + " BOOL")
+                        ' PrintLine(1, "QS" + M_SR + Chr(9) + QS + Chr(9) + " BOOL")
                     Else
                         PrintLine(1, "QS" + M_SR + Chr(9) + Chr(37) + QS + Chr(9) + " BOOL")
                     End If
@@ -397,51 +402,51 @@
                 End If
                 If HL1 <> Nothing Then
                     If Microsoft.VisualBasic.Left(HL1, 1).ToString <> "Q" And Microsoft.VisualBasic.Left(HL1, 1).ToString <> "q" Then
-                        PrintLine(1, "HL1A" + M_SR + Chr(9) + HL1 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_HL1" + Chr(9) + HL1 + Chr(9) + " BOOL")
                     Else
-                        PrintLine(1, "HL1A" + M_SR + Chr(9) + Chr(37) + HL1 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_HL1" + Chr(9) + Chr(37) + HL1 + Chr(9) + " BOOL")
                     End If
                 End If
                 If HL2 <> Nothing Then
                     If Microsoft.VisualBasic.Left(HL2, 1).ToString <> "Q" And Microsoft.VisualBasic.Left(HL2, 1).ToString <> "q" Then
-                        PrintLine(1, "HL2A" + M_SR + Chr(9) + HL2 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_HL2" + Chr(9) + HL2 + Chr(9) + " BOOL")
                     Else
-                        PrintLine(1, "HL2A" + M_SR + Chr(9) + Chr(37) + HL2 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_HL2" + Chr(9) + Chr(37) + HL2 + Chr(9) + " BOOL")
                     End If
                 End If
                 If HL3 <> Nothing Then
                     If Microsoft.VisualBasic.Left(HL3, 1).ToString <> "Q" And Microsoft.VisualBasic.Left(HL3, 1).ToString <> "q" Then
-                        PrintLine(1, "HL3A" + M_SR + Chr(9) + HL3 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_HL3" + Chr(9) + HL3 + Chr(9) + " BOOL")
                     Else
-                        PrintLine(1, "HL3A" + M_SR + Chr(9) + Chr(37) + HL3 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_HL3" + Chr(9) + Chr(37) + HL3 + Chr(9) + " BOOL")
                     End If
                 End If
                 If YV1 <> Nothing Then
                     If Microsoft.VisualBasic.Left(YV1, 1).ToString <> "Q" And Microsoft.VisualBasic.Left(YV1, 1).ToString <> "q" Then
-                        PrintLine(1, "YV1A" + M_SR + Chr(9) + YV1 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_YV1" + Chr(9) + YV1 + Chr(9) + " BOOL")
                     Else
-                        PrintLine(1, "YV1A" + M_SR + Chr(9) + Chr(37) + YV1 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_YV1" + Chr(9) + Chr(37) + YV1 + Chr(9) + " BOOL")
                     End If
                 End If
                 If YV2 <> Nothing Then
                     If Microsoft.VisualBasic.Left(YV2, 1).ToString <> "Q" And Microsoft.VisualBasic.Left(YV2, 1).ToString <> "q" Then
-                        PrintLine(1, "YV2A" + M_SR + Chr(9) + YV2 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_YV2" + Chr(9) + YV2 + Chr(9) + " BOOL")
                     Else
-                        PrintLine(1, "YV2A" + M_SR + Chr(9) + Chr(37) + YV2 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_YV2" + Chr(9) + Chr(37) + YV2 + Chr(9) + " BOOL")
                     End If
                 End If
                 If YV3 <> Nothing Then
                     If Microsoft.VisualBasic.Left(YV3, 1).ToString <> "Q" And Microsoft.VisualBasic.Left(YV3, 1).ToString <> "q" Then
-                        PrintLine(1, "YV3A" + M_SR + Chr(9) + YV3 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_YV3" + Chr(9) + YV3 + Chr(9) + " BOOL")
                     Else
-                        PrintLine(1, "YV3A" + M_SR + Chr(9) + Chr(37) + YV3 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_YV3" + Chr(9) + Chr(37) + YV3 + Chr(9) + " BOOL")
                     End If
                 End If
                 If YV4 <> Nothing Then
                     If Microsoft.VisualBasic.Left(YV4, 1).ToString <> "Q" And Microsoft.VisualBasic.Left(YV4, 1).ToString <> "q" Then
-                        PrintLine(1, "YV4A" + M_SR + Chr(9) + YV4 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_YV4" + Chr(9) + YV4 + Chr(9) + " BOOL")
                     Else
-                        PrintLine(1, "YV4A" + M_SR + Chr(9) + Chr(37) + YV4 + Chr(9) + " BOOL")
+                        PrintLine(1, M_SR + "_YV4" + Chr(9) + Chr(37) + YV4 + Chr(9) + " BOOL")
                     End If
                 End If
                 If Reset <> Nothing Then
@@ -849,10 +854,11 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles 输入映射SCL.Click
         Dim name_of_sheet_IO = IOSheet.Text
+        Dim saveName = "Input_" + IOSheet.Text + ".scl"
         Dim xlApp As New Microsoft.Office.Interop.Excel.Application
         ' xlApp.Workbooks.Open("c:\MyDate.xls")
         Dim P = Application.StartupPath & "\输入输出表.xlsx"
-        Dim txt = Application.StartupPath & "\输入SCL.txt"
+        Dim txt = Application.StartupPath & "\" + saveName
 
         xlApp.Caption = "欢迎,使用!"
         Dim xlBook = xlApp.Workbooks.Open(P) '打开电机数据表
@@ -902,7 +908,7 @@
 
 
         FileOpen(1, txt, OpenMode.Output)
-        PrintLine(1, " FUNCTION_BLOCK " + Chr(34) + "InputTransfer " + Chr(34))
+        PrintLine(1, " FUNCTION_BLOCK " + Chr(34) + "InputTransfer_" + name_of_sheet_IO + Chr(34))
         PrintLine(1, Chr(123) + "S7_Optimized_Access :=" + Chr(39) + "TRUE" + Chr(39) + Chr(125))
         PrintLine(1, "VERSION : 0.1")
 
@@ -1263,10 +1269,11 @@
 
     Private Sub 输出映射SCL_Click(sender As Object, e As EventArgs) Handles 输出映射SCL.Click
         Dim name_of_sheet_IO = IOSheet.Text
+        Dim saveName = "Output_" + IOSheet.Text + ".scl"
         Dim xlApp As New Microsoft.Office.Interop.Excel.Application
         ' xlApp.Workbooks.Open("c:\MyDate.xls")
         Dim P = Application.StartupPath & "\输入输出表.xlsx"
-        Dim txt = Application.StartupPath & "\输出SCL.txt"
+        Dim txt = Application.StartupPath & "\" + saveName
 
         xlApp.Caption = "欢迎,使用!"
         Dim xlBook = xlApp.Workbooks.Open(P) '打开电机数据表
@@ -1298,7 +1305,7 @@
         Dim M_SR1 As String
 
         FileOpen(1, txt, OpenMode.Output)
-        PrintLine(1, " FUNCTION_BLOCK " + Chr(34) + "OutputTransfer " + Chr(34) + "  ")
+        PrintLine(1, " FUNCTION_BLOCK " + Chr(34) + "OutputTransfer_" + name_of_sheet_IO + Chr(34) + "  ")
         PrintLine(1, Chr(123) + "S7_Optimized_Access :=" + Chr(39) + "TRUE" + Chr(39) + Chr(125))
         PrintLine(1, "VERSION : 0.1")
 
@@ -1511,10 +1518,11 @@
     Private Sub 电机故障诊断SCL_Click(sender As Object, e As EventArgs) Handles 电机故障诊断SCL.Click
 
         Dim name_of_sheet_IO = IOSheet.Text
+        Dim saveName = "Status_" + IOSheet.Text + ".scl"
         Dim xlApp As New Microsoft.Office.Interop.Excel.Application
         ' xlApp.Workbooks.Open("c:\MyDate.xls")
         Dim P = Application.StartupPath & "\电机数据表.xlsx"
-        Dim txt = Application.StartupPath & "\Status.txt"
+        Dim txt = Application.StartupPath & "\" + saveName
 
         xlApp.Caption = "欢迎,使用!"
 
@@ -1572,10 +1580,10 @@
         Dim OP_Fault As String
 
         FileOpen(1, txt, OpenMode.Output)
-        PrintLine(1, " FUNCTION_BLOCK " + Chr(34) + "Status " + Chr(34) + "  ")
+        PrintLine(1, " FUNCTION_BLOCK " + Chr(34) + "Status_" + name_of_sheet_IO + Chr(34) + "  ")
         PrintLine(1, Chr(123) + "S7_Optimized_Access :=" + Chr(39) + "TRUE" + Chr(39) + Chr(125))
         PrintLine(1, "VERSION : 0.1")
-        PrintLine(1, "VAR")
+        PrintLine(1, Space(3) + "VAR")
         LINE_NO = 4
 201 ： M_NO = xlsheet.Cells(LINE_NO, 1).Value
         If M_NO.ToString = "start" Then
@@ -1660,6 +1668,8 @@
             GoTo 201
         End If
 702:    PrintLine(1, "END_VAR")
+        PrintLine(1, "")
+        PrintLine(1, "")
         PrintLine(1, "BEGIN")
 
         LINE_NO = 4
@@ -1720,8 +1730,8 @@
                     PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                     PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_NO * M_AD_M + M_AD_C), 4) + ",")
                     PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                    PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
-                    If M_T_1or2 = "1" Then
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + "_前到位" + ",")
+                If M_T_1or2 = "1" Then
                         PrintLine(1, "T_Enable :=" + Chr(34) + "True" + Chr(34) + ",")
                     Else
                         PrintLine(1, "T_Enable :=" + Chr(34) + "False" + Chr(34) + ",")
@@ -1738,8 +1748,8 @@
                     PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                     PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_SR * M_AD_M + M_AD_C), 4) + ",")
                     PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                    PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
-                    If M_T_1or2 = "1" Then
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + "_前到位" + ",")
+                If M_T_1or2 = "1" Then
                         PrintLine(1, "T_Enable :=" + Chr(34) + "True" + Chr(34) + ",")
                     Else
                         PrintLine(1, "T_Enable :=" + Chr(34) + "False" + Chr(34) + ",")
@@ -1756,8 +1766,8 @@
                     PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                     PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_SR * M_AD_M + M_AD_C), 4) + ",")
                     PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                    PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
-                    If M_T_1or2 = "1" Then
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + "_前到位" + ",")
+                If M_T_1or2 = "1" Then
                         PrintLine(1, "T_Enable :=" + Chr(34) + "True" + Chr(34) + ",")
                     Else
                         PrintLine(1, "T_Enable :=" + Chr(34) + "False" + Chr(34) + ",")
@@ -1773,8 +1783,8 @@
                 PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                     PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_SR * M_AD_M + M_AD_C), 4) + ",")
                     PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                    PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
-                    If M_T_1or2 = "1" Then
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + "_前到位" + ",")
+                If M_T_1or2 = "1" Then
                         PrintLine(1, "T_Enable :=" + Chr(34) + "True" + Chr(34) + ",")
                     Else
                         PrintLine(1, "T_Enable :=" + Chr(34) + "False" + Chr(34) + ",")
@@ -1792,8 +1802,8 @@
                     PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                 '  PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_SR * M_AD_M + M_AD_C), 4) + ",")
                 PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                    PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
-                    If KM_Err_Enable = "2" Then
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + "_前到位" + ",")
+                If KM_Err_Enable = "2" Then
                         PrintLine(1, "KM_Err_Enable := " + Chr(34) + "False" + Chr(34) + ",")
                         'ElseIf KM_Err_Enable = 2 Then
                     Else
@@ -1815,8 +1825,8 @@
                     PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                 '  PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_SR * M_AD_M + M_AD_C), 4) + ",")
                 PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                    PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
-                    If M_T_1or2 = "1" Then
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + "_前到位" + ",")
+                If M_T_1or2 = "1" Then
                         PrintLine(1, "T_Enable :=" + Chr(34) + "True" + Chr(34) + ",")
                     Else
                         PrintLine(1, "T_Enable :=" + Chr(34) + "False" + Chr(34) + ",")
@@ -1837,7 +1847,7 @@
                 PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                 PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_NO * M_AD_M + M_AD_C), 4) + ",")
                 PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + "_前到位" + ",")
                 If M_T_1or2 = "1" Then
                     PrintLine(1, "T_Enable :=" + Chr(34) + "True" + Chr(34) + ",")
                 Else
@@ -1855,7 +1865,7 @@
                 PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                 PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_SR * M_AD_M + M_AD_C), 4) + ",")
                 PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + "_前到位" + ",")
                 If M_T_1or2 = "1" Then
                     PrintLine(1, "T_Enable :=" + Chr(34) + "True" + Chr(34) + ",")
                 Else
@@ -1873,7 +1883,7 @@
                 PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                 PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_SR * M_AD_M + M_AD_C), 4) + ",")
                 PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + "_前到位" + ",")
                 If M_T_1or2 = "1" Then
                     PrintLine(1, "T_Enable :=" + Chr(34) + "True" + Chr(34) + ",")
                 Else
@@ -1890,7 +1900,7 @@
                 PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                 PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_SR * M_AD_M + M_AD_C), 4) + ",")
                 PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + "_前到位" + ",")
                 If M_T_1or2 = "1" Then
                     PrintLine(1, "T_Enable :=" + Chr(34) + "True" + Chr(34) + ",")
                 Else
@@ -1909,7 +1919,7 @@
                 PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                 '  PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_SR * M_AD_M + M_AD_C), 4) + ",")
                 PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + +"_前到位" + ",")
                 If KM_Err_Enable = "2" Then
                     PrintLine(1, "KM_Err_Enable := " + Chr(34) + "False" + Chr(34) + ",")
                     'ElseIf KM_Err_Enable = 2 Then
@@ -1932,8 +1942,8 @@
                         PrintLine(1, "M_ID_Offset :=" + M_OFFSET + ",")
                 '     PrintLine(1, "Address :=" + Microsoft.VisualBasic.Left(Str(M_SR * M_AD_M + M_AD_C), 4) + ",")
                 PrintLine(1, "OP_Mode :=" + Chr(34) + AUTO + Chr(34) + ",")
-                        PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + ",")
-                        If M_T_1or2 = "1" Then
+                PrintLine(1, "Sensor:=" + Chr(34) + "INPUT" + Chr(34) + ".M[" + M_SR + "]." + M_BQ + +"_前到位" + ",")
+                If M_T_1or2 = "1" Then
                             PrintLine(1, "T_Enable :=" + Chr(34) + "True" + Chr(34) + ",")
                         Else
                             PrintLine(1, "T_Enable :=" + Chr(34) + "False" + Chr(34) + ",")
@@ -1976,19 +1986,28 @@
             M_SR = M_NO
             M_SR1 = M2_NO
 
-            If M_1or2 = 1 Then
-                PrintLine(1, " OR" + Chr(34) + "STA" + Chr(34) + ".M[" + M_SR + "].Fault")
-            ElseIf M_1or2 = 2 Then
-                PrintLine(1, "OR" + Chr(34) + "STA" + Chr(34) + ".M[" + M_SR + "].Fault")
-                PrintLine(1, "OR" + Chr(34) + "STA" + Chr(34) + ".M[" + M_SR1 + "].Fault")
+
+            If LINE_NO = 5 Then
+                If M_1or2 = 1 Then
+                    PrintLine(1, Chr(34) + "STA" + Chr(34) + ".M[" + M_SR + "].Fault")
+                ElseIf M_1or2 = 2 Then
+                    PrintLine(1, Chr(34) + "STA" + Chr(34) + ".M[" + M_SR + "].Fault")
+                    PrintLine(1, Chr(34) + "STA" + Chr(34) + ".M[" + M_SR1 + "].Fault")
+                End If
+
+            Else
+                If M_1or2 = 1 Then
+                    PrintLine(1, " OR" + Chr(34) + "STA" + Chr(34) + ".M[" + M_SR + "].Fault")
+                ElseIf M_1or2 = 2 Then
+                    PrintLine(1, "OR" + Chr(34) + "STA" + Chr(34) + ".M[" + M_SR + "].Fault")
+                    PrintLine(1, "OR" + Chr(34) + "STA" + Chr(34) + ".M[" + M_SR1 + "].Fault")
+                End If
             End If
+
             LINE_NO = LINE_NO + 1
 
             GoTo 200
         End If
-
-
-
 
 
 700:    xlApp.ActiveWorkbook.Close()
@@ -2010,9 +2029,10 @@
 
     End Sub
 
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles LabelDateTime.Click
 
     End Sub
+
 End Class
 
 

@@ -1,0 +1,506 @@
+ FUNCTION_BLOCK "Status_OP01"  
+{S7_Optimized_Access :='TRUE'}
+VERSION : 0.1
+   VAR
+M2101_Status:"#YF#StatusIO";
+M2102_Status:"#YF#StatusIO";
+M2103_Status:"#YF#StatusIO";
+M2104_Status:"#YF#StatusIO";
+M2105_Status:"#YF#StatusIO";
+M2106_Status:"#YF#StatusIO";
+M2107_Status:"#YF#StatusIO";
+M2108_Status:"#YF#StatusIO";
+M2109_Status:"#YF#StatusIO";
+M2110_Status:"#YF#StatusIO";
+M2111_Status:"#YF#StatusIO";
+M2112_Status:"#YF#StatusIO";
+M2113_Status:"#YF#StatusIO";
+M2114_Status:"#YF#StatusIO";
+M2115_Status:"#YF#StatusIO";
+M2134_Status:"#YF#StatusIO";
+M2116_Status:"#YF#StatusIO";
+M2135_Status:"#YF#StatusIO";
+M2117_Status:"#YF#StatusIO";
+M2118_Status:"#YF#StatusIO";
+M2119_Status:"#YF#StatusIO";
+M2120_Status:"#YF#StatusIO";
+M2121_Status:"#YF#StatusIO";
+M2122_Status:"#YF#StatusIO";
+M2123_Status:"#YF#StatusIO";
+M2124_Status:"#YF#StatusIO";
+M2125_Status:"#YF#StatusIO";
+M2126_Status:"#YF#StatusIO";
+M2127_Status:"#YF#StatusIO";
+M2128_Status:"#YF#StatusIO";
+M2129_Status:"#YF#StatusIO";
+M2130_Status:"#YF#StatusIO";
+M2131_Status:"#YF#StatusIO";
+M2132_Status:"#YF#StatusIO";
+M2133_Status:"#YF#StatusIO";
+END_VAR
+
+
+BEGIN
+//2101故障处理程序; 
+#M2101_status(
+M_ID :=2101,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2101].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2101].Work_ID);
+//2102故障处理程序; 
+#M2102_status(
+M_ID :=2102,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2102].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2102].Work_ID);
+//2103故障处理程序; 
+#M2103_status(
+M_ID :=2103,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2103].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2103].Work_ID);
+//2104故障处理程序; 
+#M2104_status(
+M_ID :=2104,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2104].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2104].Work_ID);
+//2105故障处理程序; 
+#M2105_status(
+M_ID :=2105,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2105].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2105].Work_ID);
+//2106故障处理程序; 
+#M2106_status(
+M_ID :=2106,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2106].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2106].Work_ID);
+//2107故障处理程序; 
+#M2107_status(
+M_ID :=2107,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2107].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2107].Work_ID);
+//2108故障处理程序; 
+#M2108_status(
+M_ID :=2108,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2108].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2108].Work_ID);
+//2109故障处理程序; 
+#M2109_status(
+M_ID :=2109,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2109].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2109].Work_ID);
+//2110故障处理程序; 
+#M2110_status(
+M_ID :=2110,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2110].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2110].Work_ID);
+//2111故障处理程序; 
+#M2111_status(
+M_ID :=2111,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2111].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2111].Work_ID);
+//2112故障处理程序; 
+#M2112_status(
+M_ID :=2112,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2112].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2112].Work_ID);
+//2113故障处理程序; 
+#M2113_status(
+M_ID :=2113,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2113].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2113].Work_ID);
+//2114故障处理程序; 
+#M2114_status(
+M_ID :=2114,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2114].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2114].Work_ID);
+//2115故障处理程序; 
+#M2115_status(
+M_ID :=2115,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2115].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2115].Work_ID);
+//2134故障处理程序; 
+#M2134_status(
+M_ID :=2134,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2134].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2134].Work_ID);
+//2116故障处理程序; 
+#M2116_status(
+M_ID :=2116,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2116].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2116].Work_ID);
+//2135故障处理程序; 
+#M2135_status(
+M_ID :=2135,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2135].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2135].Work_ID);
+//2117故障处理程序; 
+#M2117_status(
+M_ID :=2117,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2117].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2117].Work_ID);
+//2118故障处理程序; 
+#M2118_status(
+M_ID :=2118,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2118].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2118].Work_ID);
+//2119故障处理程序; 
+#M2119_status(
+M_ID :=2119,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2119].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2119].Work_ID);
+//2120故障处理程序; 
+#M2120_status(
+M_ID :=2120,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2120].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2120].Work_ID);
+//2121故障处理程序; 
+#M2121_status(
+M_ID :=2121,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2121].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2121].Work_ID);
+//2122故障处理程序; 
+#M2122_status(
+M_ID :=2122,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2122].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2122].Work_ID);
+//2123故障处理程序; 
+#M2123_status(
+M_ID :=2123,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2123].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2123].Work_ID);
+//2124故障处理程序; 
+#M2124_status(
+M_ID :=2124,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2124].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2124].Work_ID);
+//2125故障处理程序; 
+#M2125_status(
+M_ID :=2125,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2125].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2125].Work_ID);
+//2126故障处理程序; 
+#M2126_status(
+M_ID :=2126,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2126].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2126].Work_ID);
+//2127故障处理程序; 
+#M2127_status(
+M_ID :=2127,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2127].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2127].Work_ID);
+//2128故障处理程序; 
+#M2128_status(
+M_ID :=2128,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2128].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2128].Work_ID);
+//2129故障处理程序; 
+#M2129_status(
+M_ID :=2129,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2129].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2129].Work_ID);
+//2130故障处理程序; 
+#M2130_status(
+M_ID :=2130,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2130].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2130].Work_ID);
+//2131故障处理程序; 
+#M2131_status(
+M_ID :=2131,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2131].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2131].Work_ID);
+//2132故障处理程序; 
+#M2132_status(
+M_ID :=2132,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2132].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2132].Work_ID);
+//2133故障处理程序; 
+#M2133_status(
+M_ID :=2133,
+M_ID_Offset :=2100,
+OP_Mode :="OP01_AUTO",
+Sensor:="INPUT".M[2133].BQ1_前到位,
+KM_Err_Enable  := "True",
+T_Enable :="True",
+T_Time := T#10S,
+T_Reset :="OP01_TIME_RES",
+KM_Err_Reset:="OP01_MOTO_RES",
+Job_ID:= "INFO".M[2133].Work_ID);
+// 故障汇总
+IF"STA".M[2101].Fault
+ OR"STA".M[2102].Fault
+ OR"STA".M[2103].Fault
+ OR"STA".M[2104].Fault
+ OR"STA".M[2105].Fault
+ OR"STA".M[2106].Fault
+ OR"STA".M[2107].Fault
+ OR"STA".M[2108].Fault
+ OR"STA".M[2109].Fault
+ OR"STA".M[2110].Fault
+ OR"STA".M[2111].Fault
+ OR"STA".M[2112].Fault
+ OR"STA".M[2113].Fault
+ OR"STA".M[2114].Fault
+ OR"STA".M[2115].Fault
+ OR"STA".M[2134].Fault
+ OR"STA".M[2116].Fault
+ OR"STA".M[2135].Fault
+ OR"STA".M[2117].Fault
+ OR"STA".M[2118].Fault
+ OR"STA".M[2119].Fault
+ OR"STA".M[2120].Fault
+ OR"STA".M[2121].Fault
+ OR"STA".M[2122].Fault
+ OR"STA".M[2123].Fault
+ OR"STA".M[2124].Fault
+ OR"STA".M[2125].Fault
+ OR"STA".M[2126].Fault
+ OR"STA".M[2127].Fault
+ OR"STA".M[2128].Fault
+ OR"STA".M[2129].Fault
+ OR"STA".M[2130].Fault
+ OR"STA".M[2131].Fault
+ OR"STA".M[2132].Fault
+ OR"STA".M[2133].Fault
+Then
+"OP01_Fault":= 1;
+ELSE
+"OP01_Fault":= 0;
+END_IF;
+
+END_FUNCTION_BLOCK

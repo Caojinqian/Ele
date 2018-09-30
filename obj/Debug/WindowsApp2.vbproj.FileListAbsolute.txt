@@ -57,7 +57,6 @@ G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\obj\Debug\Windows
 G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\obj\Debug\音锋电气程序生成工具V1.0.exe
 G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\obj\Debug\音锋电气程序生成工具V1.0.xml
 G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\obj\Debug\音锋电气程序生成工具V1.0.pdb
-G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\Ele\obj\Debug\WindowsApp2.vbprojResolveAssemblyReference.cache
 G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\Ele\obj\Debug\音锋电气程序.Form1.resources
 G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\Ele\obj\Debug\音锋电气程序.Resources.resources
 G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\Ele\obj\Debug\WindowsApp2.vbproj.GenerateResource.Cache
