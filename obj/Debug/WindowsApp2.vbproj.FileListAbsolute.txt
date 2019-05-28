@@ -68,3 +68,4 @@ G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\Ele\bin\Debug\音
 G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\Ele\bin\Debug\音锋电气程序生成工具V1.0.exe
 G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\Ele\bin\Debug\音锋电气程序生成工具V1.0.pdb
 G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\Ele\bin\Debug\音锋电气程序生成工具V1.0.xml
+G:\新建文件夹\Visual Studio 2017\Projects\电气小程序\Ele\obj\Debug\WindowsApp2.vbprojAssemblyReference.cache
